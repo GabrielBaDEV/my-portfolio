@@ -277,7 +277,6 @@ header.sticky{
     position: relative;
     overflow: hidden;
     border-radius: 8px;
-    cursor: pointer;
 }
 
 .row img{
@@ -287,10 +286,10 @@ header.sticky{
     transition: transform 0.5s;
 }
 
-.layer{
+.layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.1), #6b2900);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #6b2900);
     position: absolute;
     border-radius: 8px;
     left: 0;
@@ -305,21 +304,25 @@ header.sticky{
     transition: height 0.5s;
 }
 
-.layer h5{
+.layer h5 {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
-.layer p{
+.layer p {
     color: #fff;
     font-size: 1rem;
     line-height: 1.8;
 }
 
-.layer i{
+.link-container {
+    display: flex;
+    gap: 15px; /* Ajuste o valor para definir o espaçamento desejado entre os ícones */
+}
+
+.link-container i {
     color: var(--main-color);
-    margin-top: 20px;
     font-size: 20px;
     background: var(--text-color);
     width: 60px;
@@ -328,6 +331,7 @@ header.sticky{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    transition: all .80s ease;
 }
 
 .row:hover img{
@@ -335,4 +339,7 @@ header.sticky{
 }
 .row:hover .layer{
     height: 100%;
+}
+.layer i:hover{
+    transform: scale(0.9);
 }
