@@ -11,7 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>Portfolio</title>
-</head>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("GYZ4poksZcHM-8mo-");
+    })();
+    </script>
+    </head>
 <body>
 
     <!--header design-->
@@ -190,12 +197,11 @@
     </div>
 
     <div class="contact-form">
-        <form action="">
-            <input type="name" placeholder="Seu nome" required>
-            <input type="email" placeholder="Seu email" required>
-            <input type="" placeholder="Celular ou Telefone" required>
-            <textarea name="" id="" cols="35" rows="10" placeholder="Como posso te ajudar?" required></textarea>
-            <input type="submit" value="Enviar" class="submit" required>
+        <form>
+            <input type="name" id="name" placeholder="Seu nome" required>
+            <input type="email" id="email" placeholder="Seu email" required>
+            <textarea name="" id="message" cols="35" rows="10" placeholder="Como posso te ajudar?" required></textarea>
+            <input type="submit" value="Enviar" class="submit" onclick="sendMail()" >
         </form>
     </div>
     </section>
