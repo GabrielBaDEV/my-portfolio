@@ -491,6 +491,9 @@ form textarea{
         --p-font: 1rem;
         transition: .1s;
     }
+    .home p{
+        display: none;
+    }
     .home text h3{
         font-size: 2.5rem;
     }
